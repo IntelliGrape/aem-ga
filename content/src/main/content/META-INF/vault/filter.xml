@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-ga"/>
+    <filter root="/etc/clientlibs/aem-ga"/>
+    <filter root="/etc/cloudservices/googleanalytics"/>
+    <filter root="/apps/wcm/extensions/contentfinder" />
+</workspaceFilter>

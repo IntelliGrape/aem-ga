@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Google Analytics Config"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <application-name
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Name of the Application"
+                        fieldLabel="APPLICATION NAME"
+                        name="./applicationName"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <key-alias-name
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        defaultValue="privatekey"
+                        fieldDescription="alias name of file"
+                        fieldLabel="KEY ALIAS NAME"
+                        name="./keyAliasName"
+                        validateOnBlur="true"
+                        value="privatekey"
+                        xtype="textfield"/>
+                    <file-password
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="notasecret"
+                        fieldDescription="password of .p12 file"
+                        fieldLabel="FILE PASSWORD"
+                        name="./password"
+                        validateOnBlur="true"
+                        value="notasecret"
+                        xtype="textfield"/>
+                    <key-provider
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="SunJSSE"
+                        fieldDescription="Key provider using which .p12 file has been encrypted"
+                        fieldLabel="KEY PROVIDER"
+                        name="./keyProvider"
+                        validateOnBlur="true"
+                        value="SunJSSE"
+                        xtype="textfield"/>
+                    <service-account-email
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Service account email provided by google"
+                        fieldLabel="SERVICE ACCOUNT EMAIL"
+                        name="./serviceAccountEmail"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <file-path
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription=".p12 file which contains client id and client secret provided by google."
+                        fieldLabel="FILE PATH"
+                        name="./filePath"
+                        xtype="fileuploadfield"/>
+                    <account-id
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="The account ID assigned by Google Analytics. Usually in the form NNNNNNNN"
+                        fieldLabel="GA ACCOUNT ID"
+                        name="./accountID"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ga-tracking-code
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="The tracking code assigned by Google Analytics. Usually in the form UA-NNNNNN-N"
+                        fieldLabel="GA TRACKING CODE"
+                        name="./trackingCode"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <keystore-type
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="PKCS12"
+                        fieldDescription="Key store type of .p12 file"
+                        fieldLabel="KEYSTORE_TYPE"
+                        name="./keystoreType"
+                        validateOnBlur="true"
+                        value="PKCS12"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
