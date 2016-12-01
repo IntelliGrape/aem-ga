@@ -6,7 +6,7 @@
 
 ## Purpose of Project
 The purpose of this project is to make tracking of user activity easy using Google analytics.
-The project provides a similar experience as Adobe Analytics.
+This project provides a similar experience as Adobe Analytics.
 Developers continue to use AEM’s inbuilt analytics framework while the Siteadmin or super-authors leverage a familiar experience
 for mapping Google analytics(GA) dimensions, events etc within AEM.
 
