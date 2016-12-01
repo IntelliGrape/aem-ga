@@ -3,7 +3,7 @@
 * [Supported Version](#supported-version)
 * [Prerequisite](#prerequisite)
 * [Using AEM-GA](#using-aem-ga)
-
+ 
 ## Purpose of Project
 The purpose of this project is to make tracking of user activity easy using Google analytics.
 The project provides a similar experience as Adobe Analytics.
